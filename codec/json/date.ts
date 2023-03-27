@@ -5,11 +5,7 @@ export const date: Codec<Date> = {
   decode: v => {
     const candidate = new Date(v);
     if (Number.isNaN(candidate.valueOf()))
-      throw new CorruptPayload(
-        date,
-        'decode',
-        `Failed to decode "${v}" as a date.`
-      );
+      throw new CorruptPayload(date, 'decode', v);
     return candidate;
   },
   encode: v => v.toISOString(),

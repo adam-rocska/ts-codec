@@ -15,11 +15,7 @@ describe('JSON Codec : date', () => {
     expect(() => {
       date.decode('invalid value example');
     }).toThrowError(
-      new CorruptPayload(
-        date,
-        'decode',
-        'Failed to decode "invalid value example" as a date.'
-      )
+      new CorruptPayload(date, 'decode', 'invalid value example')
     );
   });
 
