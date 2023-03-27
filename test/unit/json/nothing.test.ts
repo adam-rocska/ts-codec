@@ -8,5 +8,4 @@ describe('JSON Codec : nothing', () => {
   test('An Encode-Decode cycle should bring us to where we were.', () => {
     expect(nothing.decode(nothing.encode())).toStrictEqual(undefined);
   });
-
 });
