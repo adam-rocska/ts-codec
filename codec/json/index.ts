@@ -9,7 +9,6 @@ export * from './array';
 export * from './boolean';
 export * from './date';
 export * from './number';
-export * from './index';
 export * from './nothing';
 export * from './optional';
 export * from './record';
