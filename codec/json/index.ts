@@ -12,7 +12,6 @@ export * from './number';
 export * from './index';
 export * from './nothing';
 export * from './optional';
-export * from './query';
 export * from './record';
 export * from './set';
 export * from './string';
