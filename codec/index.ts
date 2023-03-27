@@ -1,4 +1,10 @@
 /**
+ * GLOBAL SHIT
+ *
+ * @packageDocumentation
+ */
+
+/**
  * The primary basetypesof our ts-codec library.
  * @module
  */
