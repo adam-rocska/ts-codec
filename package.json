@@ -8,7 +8,8 @@
     "test": "jest",
     "lint": "gts lint",
     "compile": "tsc",
-    "fix": "gts fix"
+    "fix": "gts fix",
+    "api-documentation": "typedoc"
   },
   "author": "",
   "license": "MIT",

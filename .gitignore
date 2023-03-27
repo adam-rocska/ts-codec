@@ -1,3 +1,5 @@
 node_modules
 artifact
 coverage
+docs
+.DS_STORE
