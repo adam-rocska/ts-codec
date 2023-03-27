@@ -1,11 +1,16 @@
 import {Codec} from '#Codec';
+import {CorruptPayload} from '#CorruptPayload';
 
 export const date: Codec<Date> = {
   decode: v => {
-    const timestamp = parseInt(v, 10);
-    if (Number.isNaN(timestamp))
-      throw new TypeError(`Failed to decode "${v}" as a date.`);
-    return new Date(timestamp);
+    const candidate = new Date(v);
+    if (Number.isNaN(candidate.valueOf()))
+      throw new CorruptPayload(
+        date,
+        'decode',
+        `Failed to decode "${v}" as a date.`
+      );
+    return candidate;
   },
-  encode: v => v.valueOf().toString(10),
+  encode: v => v.toISOString(),
 };
