@@ -6,9 +6,7 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "jest",
-    "lint": "gts lint",
     "compile": "tsc",
-    "fix": "gts fix",
     "api-documentation": "typedoc"
   },
   "author": "",
