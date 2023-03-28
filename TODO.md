@@ -9,6 +9,7 @@
 
 ## Make things nicer
 - [ ] Bring doc' coverage to 100%
+- [ ] Improve the `optional` type to allow for choice between explicit and implicit undefined field value – as in: `somthing?: type` or `something: type | undefined`
 - [ ] Add `either` codec.
 - [ ] Exceptions' generic structure is shit.
 - [ ] Would be great to wrestle `KeyOfType` in typefest.

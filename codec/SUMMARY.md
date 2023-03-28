@@ -120,4 +120,4 @@ By doing this:
 ```ts
 const catDecoder: Codec<Cat> = {catEncoder, catDecoder};
 ```
-congratulations, you have a `Decoder`.
+congratulations, you have a `Codec`.

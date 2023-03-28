@@ -35,9 +35,14 @@ export const record = <R>(shape: RecordShape<R>): Codec<R> => {
     },
     decode: r => {
       try {
-        return JSON.parse(r, (k, v) =>
+        const result = JSON.parse(r, (k, v) =>
           isKey(k, shape) ? shape[k].decode(v) : v
         );
+        const missingKeys = shapeKeys(shape).filter(key => !(key in result));
+        for (const key of missingKeys) {
+          result[key] = shape[key].decode('undefined');
+        }
+        return result;
       } catch (error) {
         const corruptPayload = new CorruptPayload(codec, 'decode', r);
         corruptPayload.cause = error;
