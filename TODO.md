@@ -3,7 +3,7 @@
 ## PreRelease
 - [x] Package Description
 - [x] Package Keywords
-- [ ] Package Author
+- [x] Package Author
 - [ ] Browserlist
 - [ ] README file.
 
