@@ -63,12 +63,15 @@
  * codec as follows:
  * ```ts
  * import {person} from '#models/person';
+ * import {Person} from '#models/person';
  *
- * person.encode({
+ * const rawString: string = person.encode({
  *   firstName: 'Adam',
  *   lastName: 'Rocska',
  *   age: 30,
  * });
+ *
+ * const decoded: Person = person.decode(rawString);
  * ```
  */
 
