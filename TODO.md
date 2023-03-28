@@ -18,3 +18,6 @@
 - [ ] We could implement and open-source a 21Gram TypeDoc theme. All the options out there suck badly.
 - [ ] Add `@knodes/typedoc-plugin-pages` for funky stuff.
 - [ ] Contribute to `https://www.npmjs.com/package/typedoc-plugin-coverage` & fix a few typos.
+
+## Suspicious
+- [ ] @adam-rocska I distrust JavaScript's failure system. Will have to perform a thorough manual check on all type decodings + automated tests to confirm whether we get the expected runtime failres on bad string values.
