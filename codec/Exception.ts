@@ -14,6 +14,16 @@ export class Exception<T> extends Error {
   readonly codec: Codec<T>;
 
   /**
+   * Represents the cause of the given Exception which could
+   * be any `Error` basically.
+   * Handy for debugging, folks!
+   *
+   * It's of unknown type, because that's the way JavaScirpt
+   * and TypeScript rolls with Errors & Exceptions.
+   */
+  cause?: unknown;
+
+  /**
    * Creates a new exception instance.
    * @param codec   The Codec with which the exception occurred.
    * @param message The exception message describing the exception.
