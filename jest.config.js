@@ -6,6 +6,7 @@ module.exports = {
     '^#(.*)$': '<rootDir>/codec/$1',
     '^!unit/(.*)$': '<rootDir>/test/unit/$1',
     '^! component/(.*)$': '<rootDir>/test/ component/$1',
+    '^! system/(.*)$': '<rootDir>/test/ system/$1',
   },
   coverageThreshold: {
     // TODO: This config is shit. We need to control test layers separately!
