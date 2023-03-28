@@ -4,7 +4,7 @@
 - [x] Package Description
 - [x] Package Keywords
 - [x] Package Author
-- [ ] Browserlist
+- [x] Browserlist
 - [ ] README file.
 
 ## Make things nicer
