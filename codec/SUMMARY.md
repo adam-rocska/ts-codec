@@ -16,19 +16,6 @@ other kinds and we need to maintain cross-compatibility
 between them. We plan to open-source a few more later 2023,
 but with this initial release, JSON is the first bird here.
 
-## JSON Module
-Provides a Codec API implementation designed for mapping between
- your custom types to JSON strings.
-
- Imported as:
- ```ts
- import {json} from '@21gram-consulting/ts-codec';
- ```
- or, if you need something specific, as:
- ```ts
-import {nothing} from '@21gram-consulting/ts-codec/json';
- ```
-
 # Nomenclature
 
 ## Encoding

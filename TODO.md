@@ -8,6 +8,7 @@
 - [ ] README file.
 
 ## Make things nicer
+- [ ] Add `either` codec.
 - [ ] Exceptions' generic structure is shit.
 - [ ] Would be great to wrestle `KeyOfType` in typefest.
 – [ ] Bring back our oneliner style once we figure out how to know out prettier's dumb restrictions.
