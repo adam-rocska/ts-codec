@@ -5,7 +5,7 @@
 - [x] Package Keywords
 - [x] Package Author
 - [x] Browserlist
-- [ ] README file.
+- [x] README file.
 
 ## Make things nicer
 - [ ] Bring doc' coverage to 100%
