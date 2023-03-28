@@ -1,7 +1,7 @@
 import {Codec} from '#Codec';
 import {optional} from '#json/optional';
 
-describe('JSON Codec : number', () => {
+describe('JSON Codec : optional', () => {
   const stubCodec: Codec<string> = {
     encode: () => 'value',
     decode: () => 'value',
