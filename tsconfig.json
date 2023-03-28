@@ -113,6 +113,8 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "typedocOptions": {
+    "name": "TypeScript Codec",
+    "includeVersion": true,
     "entryPoints": "./codec/index.ts",
     "entryPointStrategy": "Expand",
     "out": "docs",
@@ -120,7 +122,8 @@
     "readme": "./codec/SUMMARY.md",
     "searchInComments": true,
     "navigationLinks": {
-      "Example": "http://example.com"
+      "21Gram Consulting": "https://www.21gram.consulting",
+      "GitHub": "https://github.com/21GramConsulting/ts-codec",
     }
   }
 }

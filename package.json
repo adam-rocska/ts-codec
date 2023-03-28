@@ -17,6 +17,9 @@
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5",
     "typedoc": "^0.23.28",
+    "typedoc-plugin-coverage": "^2.0.0",
+    "typedoc-plugin-expand-object-like-types": "^0.1.2",
+    "typedoc-plugin-versions": "^0.2.3",
     "typescript": "^5.0.2"
   }
 }
