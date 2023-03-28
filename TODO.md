@@ -8,6 +8,7 @@
 - [ ] README file.
 
 ## Make things nicer
+- [ ] Bring doc' coverage to 100%
 - [ ] Add `either` codec.
 - [ ] Exceptions' generic structure is shit.
 - [ ] Would be great to wrestle `KeyOfType` in typefest.
