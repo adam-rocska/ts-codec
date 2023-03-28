@@ -1,7 +1,9 @@
 /**
- * GLOBAL SHIT
- *
  * @packageDocumentation
+ * @summary
+ * Provides  the primary Codec API, and convenient access to
+ * its implementations.
+ *
  */
 
 export * from './Codec';
