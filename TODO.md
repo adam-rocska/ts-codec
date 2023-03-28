@@ -1,7 +1,7 @@
 # TODOS
 
 ## PreRelease
-- [ ] Package Description
+- [x] Package Description
 - [ ] Package Keywords
 - [ ] Package Author
 - [ ] Browserlist
