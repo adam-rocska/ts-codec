@@ -33,8 +33,8 @@
  * Basically, a person has a first name and a last name, both strings,
  * has an age represented as a number, and optionally has a contact
  * object.
- * If it has a contact object, then it must either have an e-mail
- * address, or a phone number.
+ * If it has a contact object, then it musthave an e-mail address
+ * and a phone number.
  *
  * ## Person Codec
  * One possible way to implement a Codec for a type like `Person` is
