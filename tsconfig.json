@@ -37,8 +37,8 @@
       "!unit/*": [
         "./test/unit/*"
       ],
-      "!system/*": [
-        "./test/system/*"
+      "!component/*": [
+        "./test/component/*"
       ]
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */

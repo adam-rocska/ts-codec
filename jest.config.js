@@ -5,6 +5,15 @@ module.exports = {
   moduleNameMapper: {
     '^#(.*)$': '<rootDir>/codec/$1',
     '^!unit/(.*)$': '<rootDir>/test/unit/$1',
-    '^!system/(.*)$': '<rootDir>/test/system/$1',
+    '^! component/(.*)$': '<rootDir>/test/ component/$1',
+  },
+  coverageThreshold: {
+    // TODO: This config is shit. We need to control test layers separately!
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
   },
 };
