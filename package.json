@@ -14,7 +14,7 @@
   "homepage": "https://21gramconsulting.github.io/ts-codec/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/21GramConsulting/ts-codec"
+    "url": "https://github.com/21GramConsulting/ts-codec.git"
   },
   "bugs": {
     "url": "https://github.com/21GramConsulting/ts-codec/issues"
