@@ -9,8 +9,8 @@
     "codec",
     "transformation"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/codec/index.js",
+  "types": "lib/codec/index.d.ts",
   "files": [
     "lib"
   ],
