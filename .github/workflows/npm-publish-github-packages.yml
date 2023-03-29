@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-          scope: @21gram-consulting
+          scope: "@21gram-consulting"
       - run: npm ci
       - run: npm publish
         env:
