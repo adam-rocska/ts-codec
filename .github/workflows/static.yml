@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 18
       - run: |
-          npm install
+          npm ci
           npm run api-documentation
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
