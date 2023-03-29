@@ -117,7 +117,10 @@
   },
   "exclude": [
     "node_modules",
-    "test"
+    "test",
+    "lib",
+    "docs",
+    "coverage"
   ],
   "typedocOptions": {
     "name": "TypeScript Codec",
