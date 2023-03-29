@@ -32,6 +32,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: "@21gram-consulting"
       - run: npm ci
+      - run: npm build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
