@@ -11,9 +11,13 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "homepage": "https://21gramconsulting.github.io/ts-codec/",
   "repository": {
     "type": "git",
     "url": "https://github.com/21GramConsulting/ts-codec"
+  },
+  "bugs": {
+    "url": "https://github.com/21GramConsulting/ts-codec/issues"
   },
   "scripts": {
     "test": "jest",
