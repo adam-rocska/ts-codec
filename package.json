@@ -9,8 +9,12 @@
     "codec",
     "transformation"
   ],
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/21GramConsulting/ts-codec"
+  },
   "scripts": {
     "test": "jest",
     "compile": "tsc",
