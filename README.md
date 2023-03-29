@@ -1,5 +1,5 @@
-![Image](https://repository-images.githubusercontent.com/406799671/56016d16-4f40-4342-aee0-668b8a717177)}
 # 21Gram's TypeScript Codec Library
+![Image](https://repository-images.githubusercontent.com/406799671/56016d16-4f40-4342-aee0-668b8a717177)
 
 Provides a convenient & strongly-typed API to perform coding and decoding operations between datatypes in TypeScript.
 
