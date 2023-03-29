@@ -26,6 +26,7 @@
   "scripts": {
     "test": "jest",
     "compile": "tsc",
+    "clean": "rm -rf lib docs coverage",
     "api-documentation": "typedoc"
   },
   "author": {
