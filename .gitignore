@@ -3,3 +3,4 @@ artifact
 coverage
 docs
 .DS_STORE
+lib
