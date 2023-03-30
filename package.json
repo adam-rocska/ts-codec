@@ -64,5 +64,26 @@
     "typedoc-plugin-mdn-links": "^3.0.3",
     "typedoc-plugin-versions": "^0.2.3",
     "typescript": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^#(.*)$": "<rootDir>/codec/$1",
+      "^!unit/(.*)$": "<rootDir>/test/unit/$1",
+      "^!component/(.*)$": "<rootDir>/test/ component/$1",
+      "^!system/(.*)$": "<rootDir>/test/ system/$1"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
