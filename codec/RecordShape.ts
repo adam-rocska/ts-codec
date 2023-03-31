@@ -11,6 +11,7 @@ import {Codec} from '#Codec';
  * * `Values` are expected to be the {@link Codec | Codecs} of the value stored under the respective key.
  * @typeParam Record The type of the object who's fields' codecs are to be provided.
  * @example
+ * @category Core Interface
  */
 
 export type RecordShape<Record> = {
@@ -19,6 +20,7 @@ export type RecordShape<Record> = {
 
 /**
  * @summary Describes the keys of the `Record` to be described.
+ * @category Core Interface
  */
 export type ShapeKey<Record> = keyof RecordShape<Record>;
 
@@ -26,6 +28,7 @@ export type ShapeKey<Record> = keyof RecordShape<Record>;
  * @summary Returns the keys of the `Record` to be described.
  * @param shape The {@link RecordShape | RecordShape} to be described.
  * @returns The keys of the `Record` to be described.
+ * @category Core Utility
  * @todo We are aware of the intricate challenges of
  * Object.keys it will be fine grained if/when users report
  * actual real life issues with this function.
@@ -38,6 +41,7 @@ export const shapeKeys = <R>(shape: RecordShape<R>): Array<ShapeKey<R>> =>
  * @param key The key to be checked.
  * @param shape The {@link RecordShape | RecordShape} to be described.
  * @returns `true` if the given key is a key of the given shape.
+ * @category Core Utility
  */
 export const isKey = <Record>(
   key: unknown,

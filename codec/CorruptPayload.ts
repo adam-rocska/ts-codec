@@ -9,6 +9,7 @@ import {KeyOfType} from './KeyOfType';
  * @typeParam T The type which is encoded-decoded by the related decoder.
  * @typeParam P The procedure which lead to failure (`encode` or `decode`)
  * @typeParam I The type of data procedure `P` took as input.
+ * @category Exception
  */
 export class CorruptPayload<
   T,

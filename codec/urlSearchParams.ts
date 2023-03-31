@@ -5,6 +5,7 @@ import {RecordShape, isKey, shapeKeys} from '#RecordShape';
  * @summary Encodes and decodes a record of codecs into a URLSearchParams string.
  * @param shape A record of codecs.
  * @returns A codec that encodes and decodes a record of codecs into a URLSearchParams string.
+ * @category General Purpose Codec
  */
 export const urlSearchParams = <R>(shape: RecordShape<R>): Codec<R> => ({
   encode: record =>
