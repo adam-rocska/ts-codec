@@ -1,5 +1,6 @@
 import {Codec} from '#Codec';
 import {CorruptPayload} from '#CorruptPayload';
+import {RecordShape, isKey, shapeKeys} from '#RecordShape';
 
 /**
  * @summary Constructs a {@link Codec} for `R`.
@@ -52,29 +53,3 @@ export const record = <R>(shape: RecordShape<R>): Codec<R> => {
   };
   return codec;
 };
-
-/**
- * @summary Describes which codecs to use for each field of the `Record`.
- * @description
- * This contract type is to be taken as inputs for all codecs
- * responsible for encoding and decoding objects fulfilling a
- * record/struct role. Sometimes these types are also called model types.
- *
- * * `Keys` are expected to be the keys of the `Record` to be described.
- * * `Values` are expected to be the {@link Codec | Codecs} of the value stored under the respective key.
- * @typeParam Record The type of the object who's fields' codecs are to be provided.
- * @example
- */
-export type RecordShape<Record> = {
-  [key in keyof Record]: Codec<Record[key]>;
-};
-
-type ShapeKey<Record> = keyof RecordShape<Record>;
-
-const shapeKeys = <R>(shape: RecordShape<R>): Array<ShapeKey<R>> =>
-  Object.keys(shape).filter(v => isKey(v, shape)) as Array<ShapeKey<R>>;
-
-const isKey = <Record>(
-  key: unknown,
-  shape: RecordShape<Record>
-): key is ShapeKey<Record> => typeof key === 'string' && key in shape;
