@@ -6,6 +6,7 @@ import {Codec} from '#Codec';
  *
  * @typeParam F The type from which the Codec's mapping was performed.
  * @typeParam T The type to which the Codec's mapping was performed.
+ * @category Exception
  */
 export class Exception<T> extends Error {
   /**

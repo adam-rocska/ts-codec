@@ -1,5 +1,6 @@
 /**
- * The default datatype used as the raw datasource type.
+ * @summary The default datatype used as the raw datasource type.
+ * @category Core Interface
  */
 export type RawData = string;
 
@@ -8,6 +9,7 @@ export type RawData = string;
  * @typeParam F The type from which mapping is performed.
  * @typeParam T The type to which mapping is performed.
  * @throws {@link Exception}
+ * @category Core Interface
  */
 export type Coder<F, T> = (f: F) => T;
 
@@ -16,6 +18,7 @@ export type Coder<F, T> = (f: F) => T;
  * @typeParam D The encoded datatype.
  * @typeParam C The target to which to encode `D`. By default it's `RawData`.
  * @throws {@link Exception}
+ * @category Core Interface
  */
 export type Encoder<D, C = RawData> = Coder<D, C>;
 
@@ -24,6 +27,7 @@ export type Encoder<D, C = RawData> = Coder<D, C>;
  * @typeParam D The type to which this decoder decodes `C`.
  * @typeParam C The raw data type to decode as `D`.
  * @throws {@link Exception}
+ * @category Core Interface
  */
 export type Decoder<D, C = RawData> = Coder<C, D>;
 
@@ -34,6 +38,7 @@ export type Decoder<D, C = RawData> = Coder<C, D>;
  *                decoded to.
  * @typeParam C Represents the type to which `D` is encoded to or which
  *                `D` is decoded from.
+ * @category Core Interface
  */
 export type Codec<D, C = RawData> = {
   encode: Encoder<D, C>;
@@ -43,6 +48,7 @@ export type Codec<D, C = RawData> = {
 /**
  * Utility type to extract the `SourceType` of a {@link Codec}.
  * @typeParam C must be a {@link Codec} type.
+ * @category Core Interface
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type SourceType<C> = C extends Codec<infer Source, any> ? Source : never;
@@ -50,6 +56,7 @@ export type SourceType<C> = C extends Codec<infer Source, any> ? Source : never;
 /**
  * Utility type to extract the `TargetType` of a {@link Codec}.
  * @typeParam T must be a {@link Codec} type.
+ * @category Core Interface
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type TargetType<T> = T extends Codec<any, infer Target> ? Target : never;
