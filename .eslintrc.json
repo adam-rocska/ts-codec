@@ -1,3 +1,20 @@
 {
-  "extends": "./node_modules/gts/"
+  "extends": "next/core-web-vitals",
+  "rules": {
+
+    "semi": [ "error", "always" ],
+    "prefer-const": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please import from `@/navigation` instead."
+      },
+      {
+        "name": "next/navigation",
+        "importNames": [ "redirect", "permanentRedirect", "useRouter", "usePathname" ],
+        "message": "Please import from `@/navigation` instead."
+      }
+    ]
+  }
 }
