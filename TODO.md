@@ -2,7 +2,6 @@
 
 ## Make things nicer
 
-- [ ] Would be great to wrestle `KeyOfType` in typefest.
 - [ ] For now we only have a few measily "meh" quality unit tests. We'll need component, system and regression tests by summer.
 
 ## Suspicious
