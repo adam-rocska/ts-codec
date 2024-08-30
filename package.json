@@ -36,20 +36,6 @@
     "name": "Adam Laszlo Rocska",
     "url": "https://github.com/adam-rocska"
   },
-  "contributors": [
-    {
-      "name": "Zsigmond Taroczy-Toth",
-      "url": "https://github.com/tzsiga"
-    },
-    {
-      "name": "Zsolt Bodi",
-      "url": "https://github.com/shadowk"
-    },
-    {
-      "name": "Ronald Legmann",
-      "url": "https://github.com/rlegmann"
-    }
-  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
