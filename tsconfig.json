@@ -50,19 +50,5 @@
     "lib",
     "docs",
     "coverage"
-  ],
-  "typedocOptions": {
-    "name": "TypeScript Codec",
-    "includeVersion": true,
-    "entryPoints": "./codec/index.ts",
-    "entryPointStrategy": "Expand",
-    "out": "docs",
-    "disableSources": true,
-    "readme": "./codec/SUMMARY.md",
-    "searchInComments": true,
-    "navigationLinks": {
-      "21Gram Consulting": "https://www.21gram.consulting",
-      "GitHub": "https://github.com/21GramConsulting/ts-codec",
-    }
-  }
+  ]
 }
