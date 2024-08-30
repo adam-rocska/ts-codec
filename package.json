@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/21GramConsulting/ts-codec.git"
+    "url": "https://github.com/adam-rocska/ts-codec.git"
   },
   "bugs": {
-    "url": "https://github.com/21GramConsulting/ts-codec/issues"
+    "url": "https://github.com/adam-rocska/ts-codec/issues"
   },
   "scripts": {
     "test": "jest",
