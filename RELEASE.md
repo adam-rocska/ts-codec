@@ -1,8 +1,7 @@
-# 1.2.1
+# 1.2.2
 
-Migration-release.
-API-wise nothing changed, only the bundling, test running,
-and other non-user-impacting stuff.
+README.md typo fix.
 
-`@21gram-consulting/ts-codec` is deprecated from now on in
-favor of this.
+## Patch Changes
+
+- The link to the LICENSE file was incorrect.
