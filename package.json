@@ -48,6 +48,12 @@
   "bugs": {
     "url": "https://github.com/adam-rocska/ts-codec/issues"
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/adam-rocska"
+    }
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "bunchee",
