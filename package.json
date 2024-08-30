@@ -9,11 +9,24 @@
     "codec",
     "transformation"
   ],
-  "main": "lib/codec/index.js",
-  "types": "lib/codec/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/es/index.d.mts",
+        "default": "./dist/es/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -26,9 +39,10 @@
     "url": "https://github.com/adam-rocska/ts-codec/issues"
   },
   "scripts": {
-    "test": "jest",
-    "build": "tsc && tsc-alias",
-    "clean": "rm -rf lib docs coverage"
+    "clean": "rimraf dist",
+    "build": "bunchee",
+    "test": "jest --env node",
+    "check": "pnpm eslint && pnpm attw --pack"
   },
   "author": {
     "name": "Adam Laszlo Rocska",
@@ -36,22 +50,21 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
+    "@swc/jest": "^0.2.36",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.12",
+    "bunchee": "^5.3.2",
     "eslint-config-next": "^14.2.7",
     "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
-    "tsc-alias": "^1.8.10",
+    "pnpm": "^9.9.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.5.4"
   },
-  "engines": {
-    "node": ">=14"
-  },
   "jest": {
-    "preset": "ts-jest",
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "^#(.*)$": "<rootDir>/codec/$1",
+      "^#(.*)$": "<rootDir>/src/$1",
       "^!unit/(.*)$": "<rootDir>/test/unit/$1",
       "^!component/(.*)$": "<rootDir>/test/ component/$1",
       "^!system/(.*)$": "<rootDir>/test/ system/$1"

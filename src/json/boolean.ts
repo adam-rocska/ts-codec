@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from '../Codec';
 
 export const boolean: Codec<boolean> = {
   decode: v => v === 'true',

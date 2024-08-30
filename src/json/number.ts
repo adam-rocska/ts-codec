@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {CorruptPayload} from '#CorruptPayload';
+import {Codec} from '../Codec';
+import {CorruptPayload} from '../CorruptPayload';
 
 export const number: Codec<number> = {
   decode: v => {

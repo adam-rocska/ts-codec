@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from './Codec';
 
 /**
  * @summary Describes which codecs to use for each field of the `Record`.
@@ -10,7 +10,6 @@ import {Codec} from '#Codec';
  * * `Keys` are expected to be the keys of the `Record` to be described.
  * * `Values` are expected to be the {@link Codec | Codecs} of the value stored under the respective key.
  * @typeParam Record The type of the object who's fields' codecs are to be provided.
- * @example
  * @category Core Interface
  */
 

@@ -1,4 +1,4 @@
-import {Exception} from '#./Exception';
+import {Exception} from './Exception';
 import {Codec, Decoder, Encoder} from './Codec';
 import {KeyOfType} from './KeyOfType';
 

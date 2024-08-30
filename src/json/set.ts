@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from '../Codec';
 import {array} from './array';
 
 export const set = <V>(valueCodec: Codec<V>): Codec<Set<V>> => {

@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {RecordShape, isKey, shapeKeys} from '#RecordShape';
+import {Codec} from './Codec';
+import {RecordShape, isKey, shapeKeys} from './RecordShape';
 
 /**
  * @summary Encodes and decodes a record of codecs into a URLSearchParams string.

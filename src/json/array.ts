@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from '../Codec';
 
 /**
  * @summary Constructs a {@link Codec} for an array of `V`.
@@ -6,12 +6,6 @@ import {Codec} from '#Codec';
  * @typeParameter V The type of values to be contained in the array.
  * @returns The built {@link Codec} of `Array<V>`.
  * @see {@link "json" | The JSON Codec Module}
- * @example
- * ```ts
- * import {json} from "@21gram-consulting/ts-codec";
- *
- * const numbers = json.array(json.number);
- * ```
  */ export const array = <V>(valueCodec: Codec<V>): Codec<Array<V>> => ({
   encode: a => JSON.stringify(a.map(v => valueCodec.encode(v))),
   decode: s =>

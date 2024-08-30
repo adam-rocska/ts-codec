@@ -1,6 +1,6 @@
-import {Codec} from '#Codec';
-import {CorruptPayload} from '#CorruptPayload';
-import {RecordShape, isKey, shapeKeys} from '#RecordShape';
+import {Codec} from '../Codec';
+import {CorruptPayload} from '../CorruptPayload';
+import {RecordShape, isKey, shapeKeys} from '../RecordShape';
 
 /**
  * @summary Constructs a {@link Codec} for `R`.

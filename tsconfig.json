@@ -1,54 +1,12 @@
 {
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "CommonJS",
-    "rootDir": ".",
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "#*": [
-        "./codec/*"
-      ],
-      "!unit/*": [
-        "./test/unit/*"
-      ],
-      "!component/*": [
-        "./test/component/*"
-      ],
-      "!system/*": [
-        "./test/system/*"
-      ]
-    },
-    "resolveJsonModule": true,
-    "allowJs": false,
-    "declaration": true,
-    "outDir": "./lib/",
-    "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "skipLibCheck": true
-  },
-  "exclude": [
-    "node_modules",
-    "lib",
-    "docs",
-    "coverage"
-  ]
+    "checkJs": true
+  }
 }

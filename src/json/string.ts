@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from '../Codec';
 
 /**
  * Responsible for string encoding and decoding.

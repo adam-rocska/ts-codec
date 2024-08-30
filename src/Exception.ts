@@ -1,4 +1,4 @@
-import {Codec} from '#Codec';
+import {Codec} from './Codec';
 
 /**
  * Represents a general 21Gram Codec exception.
@@ -22,7 +22,7 @@ export class Exception<T> extends Error {
    * It's of unknown type, because that's the way JavaScirpt
    * and TypeScript rolls with Errors & Exceptions.
    */
-  cause?: unknown;
+  override cause?: unknown;
 
   /**
    * Creates a new exception instance.
