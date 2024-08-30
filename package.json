@@ -1,5 +1,5 @@
 {
-  "name": "@21gram-consulting/ts-codec",
+  "name": "@adam-rocska/ts-codec",
   "version": "1.2.0",
   "description": "TypeScript library providing a set of contracts for encoding and decoding values in a strongly-typed way.",
   "keywords": [
