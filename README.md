@@ -1,5 +1,8 @@
 # Codec – Encode & Decode for TypeScript
 
+[![NPM Version](https://img.shields.io/npm/v/@adam-rocska/ts-codec.svg)](https://www.npmjs.com/package/@adam-rocska/ts-codec)
+[![License](https://img.shields.io/npm/l/@adam-rocska/ts-codec)](https://github.com/adam-rocska/ts-codec-typescript/blob/master/LICENSE)
+
 A TypeScript library that provides a strongly-typed and
 user-friendly API for encoding and decoding data types.
 
