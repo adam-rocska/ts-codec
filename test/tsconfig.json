@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "baseUrl": "..",
+    "paths": {
+      "@adam-rocska/ts-codec": [ "./src/index.ts" ],
+      "!*": [ "./*" ],
+    }
+  },
+  "include": [
+    "./**/*.test.ts"
+  ]
+}

@@ -1,5 +1,5 @@
-import {json} from '#index';
-import {shapeKeys, isKey} from '#RecordShape';
+import {json} from '!src/index';
+import {shapeKeys, isKey} from '!src/RecordShape';
 
 describe('RecordShape.ts', () => {
   describe('.shapeKeys', () => {

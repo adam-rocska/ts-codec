@@ -1,6 +1,6 @@
-import {urlSearchParams} from '#urlSearchParams';
-import {string, number, boolean} from '#json';
-import {CorruptPayload} from '#CorruptPayload';
+import {urlSearchParams} from '!src/urlSearchParams';
+import {string, number, boolean} from '!src/json';
+import {CorruptPayload} from '!src/CorruptPayload';
 
 describe('urlSearchParams', () => {
   const testCodec = urlSearchParams({

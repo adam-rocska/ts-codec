@@ -1,4 +1,4 @@
-import {boolean} from '#json/boolean';
+import {boolean} from '!src/json/boolean';
 
 describe('JSON Codec : boolean', () => {
   test('#encode', async () => {

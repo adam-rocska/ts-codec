@@ -1,5 +1,5 @@
-import {CorruptPayload} from '#CorruptPayload';
-import {date} from '#json/date';
+import {CorruptPayload} from '!src/CorruptPayload';
+import {date} from '!src/json/date';
 
 describe('JSON Codec : date', () => {
   const now = new Date();

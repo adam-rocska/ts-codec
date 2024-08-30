@@ -1,4 +1,4 @@
-import {json} from '#index';
+import {json} from '!src/index';
 
 describe("[2023-03-18] API Documentation's example validation.", () => {
   test('should do what it promises.', () => {

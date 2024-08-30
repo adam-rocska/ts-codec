@@ -1,4 +1,4 @@
-import {nothing} from '#json/nothing';
+import {nothing} from '!src/json/nothing';
 
 describe('JSON Codec : nothing', () => {
   test('#encode', async () => {

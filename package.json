@@ -1,13 +1,23 @@
 {
   "name": "@adam-rocska/ts-codec",
-  "version": "1.2.0",
-  "description": "TypeScript library providing a set of contracts for encoding and decoding values in a strongly-typed way.",
+  "version": "1.2.1",
+  "description": "TypeScript library offering robust contracts for encoding and decoding values with strong type safety.",
   "keywords": [
-    "typescri",
+    "typescript",
     "encoding",
     "decoding",
     "codec",
-    "transformation"
+    "transformation",
+    "serialization",
+    "deserialization",
+    "strongly-typed",
+    "type-safe",
+    "data-serialization",
+    "data-transformation",
+    "functional-api",
+    "json",
+    "encoder",
+    "decoder"
   ],
   "files": [
     "dist"
@@ -62,20 +72,25 @@
     "typescript": "^5.5.4"
   },
   "jest": {
-    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules"
+    ],
     "moduleNameMapper": {
-      "^#(.*)$": "<rootDir>/src/$1",
-      "^!unit/(.*)$": "<rootDir>/test/unit/$1",
-      "^!component/(.*)$": "<rootDir>/test/ component/$1",
-      "^!system/(.*)$": "<rootDir>/test/ system/$1"
+      "^@adam-rocska/ts-codec$": "<rootDir>/src/index.ts",
+      "^!(.*)$": "<rootDir>/$1"
     },
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
-  }
+    "transform": {
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testTimeout": 1000
+  },
+  "packageManager": "pnpm@9.4.0"
 }

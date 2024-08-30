@@ -1,4 +1,4 @@
-import {isCoder, isRawData, isCodec} from '#Codec';
+import {isCoder, isRawData, isCodec} from '!src/Codec';
 
 describe('Codec.ts', () => {
   describe('.isRawData', () => {

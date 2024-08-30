@@ -1,6 +1,6 @@
-import {Codec} from '#Codec';
-import {CorruptPayload} from '#CorruptPayload';
-import {record} from '#json';
+import {Codec} from '!src/Codec';
+import {CorruptPayload} from '!src/CorruptPayload';
+import {record} from '!src/json';
 
 describe('JSON Codec : record', () => {
   const mockEncode = jest.fn(() => 'test');

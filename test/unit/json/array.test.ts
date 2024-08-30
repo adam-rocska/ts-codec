@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {array} from '#json';
+import {Codec} from '!src/Codec';
+import {array} from '!src/json';
 
 describe('JSON Codec : array', () => {
   const stubCodec: Codec<string> = {

@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {optional} from '#json/optional';
+import {Codec} from '!src/Codec';
+import {optional} from '!src/json/optional';
 
 describe('JSON Codec : optional', () => {
   const stubCodec: Codec<string> = {

@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {set} from '#json';
+import {Codec} from '!src/Codec';
+import {set} from '!src/json';
 
 describe('JSON Codec : set', () => {
   const stubCodec: Codec<string> = {

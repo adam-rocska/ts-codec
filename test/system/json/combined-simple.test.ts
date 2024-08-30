@@ -1,4 +1,4 @@
-import {SourceType} from '#Codec';
+import {SourceType} from '!src/Codec';
 import {
   array,
   boolean,
@@ -8,7 +8,7 @@ import {
   record,
   set,
   string,
-} from '#json';
+} from '!src/json';
 
 describe('System Test', () => {
   describe('combining simple cases', () => {

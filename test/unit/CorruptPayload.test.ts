@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {CorruptPayload} from '#CorruptPayload';
+import {Codec} from '!src/Codec';
+import {CorruptPayload} from '!src/CorruptPayload';
 
 describe('CorruptPayload', () => {
   const stubCodec: Codec<{}> = {

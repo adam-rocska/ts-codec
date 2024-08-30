@@ -1,5 +1,5 @@
-import {CorruptPayload} from '#CorruptPayload';
-import {number} from '#json/number';
+import {CorruptPayload} from '!src/CorruptPayload';
+import {number} from '!src/json/number';
 
 describe('JSON Codec : number', () => {
   test('#encode', async () => {

@@ -1,18 +1,25 @@
 # Codec – Encode & Decode for TypeScript
 
-Provides a convenient & strongly-typed API to perform coding and decoding operations between datatypes in TypeScript.
+A TypeScript library that provides a strongly-typed and
+user-friendly API for encoding and decoding data types.
 
-Conceptually inspired by Swift's Codable API, however it's nowhere near it. The first version's goal is to provide a basic yet convenient functional API for these tasks.
+Inspired by Swift's Codable API, this library aims to offer
+a straightforward functional API for basic encoding and
+decoding tasks. While it's a simplified initial release,
+future iterations will introduce more advanced features.
 
-See this repo's GitHub Pages for an API doc'.
+For detailed API documentation, please refer to this
+repository's GitHub Pages.
 
 ## Disclaimer
 
-Since this repo is an initial step in open-sourcing our more robust internal `ts-codec` solution:
+This repository is the first step in open-sourcing our more
+advanced internal `ts-codec` solution:
 
-* More features are to be expected
-* Though we do our best to avoid them, some hiccups may occur.
+* Expect additional features in upcoming versions.
+* We strive for stability, but some issues may arise.
 
-The end goal is to switch our dependency direction from internal first
-to external first. Internall we do use the migrated code but in a different environment, so differences could happen.
-
+The long-term goal is to transition from an internal-first
+to an external-first dependency model. The code used
+internally may differ slightly from this open-source
+version, so minor discrepancies are possible.

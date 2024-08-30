@@ -1,5 +1,5 @@
-import {Codec} from '#Codec';
-import {Exception} from '#Exception';
+import {Codec} from '!src/Codec';
+import {Exception} from '!src/Exception';
 
 describe('Exception', () => {
   describe('.constructor', () => {

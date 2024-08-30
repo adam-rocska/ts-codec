@@ -1,4 +1,4 @@
-import {string} from '#json/string';
+import {string} from '!src/json/string';
 
 describe('JSON Codec : string', () => {
   test('Both encode & decode return the value unchanged.', async () => {
