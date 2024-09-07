@@ -21,15 +21,32 @@ future iterations will introduce more advanced features.
 For detailed API documentation, please refer to this
 repository's GitHub Pages.
 
-## Disclaimer
+## Example
 
-This repository is the first step in open-sourcing our more
-advanced internal `ts-codec` solution:
+```typescript
+const testCodec = record({
+  firstName: string,
+  lastName: optional(string),
+  age: optional(number),
+  traits: array(
+    record({
+      isVenerable: boolean,
+      label: string,
+      labelAlternatives: set(string),
+      aquiredOn: date,
+    })
+  ),
+});
 
-* Expect additional features in upcoming versions.
-* We strive for stability, but some issues may arise.
+type TestRecord = SourceType<typeof testCodec>;
 
-The long-term goal is to transition from an internal-first
-to an external-first dependency model. The code used
-internally may differ slightly from this open-source
-version, so minor discrepancies are possible.
+const source: TestRecord = {
+  firstName: 'Adam',
+  lastName: 'Rocska',
+  age: undefined,
+  traits: [],
+};
+const str = testCodec.encode(source);
+const result = testCodec.decode(str);
+expect(result).toMatchObject(source);
+```
