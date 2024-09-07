@@ -1,7 +1,5 @@
-# 1.2.2
-
-README.md typo fix.
+# 1.2.3
 
 ## Patch Changes
 
-- The link to the LICENSE file was incorrect.
+- Added useful badges to the README.md

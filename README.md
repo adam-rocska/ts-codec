@@ -1,7 +1,14 @@
 # Codec – Encode & Decode for TypeScript
 
 [![NPM Version](https://img.shields.io/npm/v/@adam-rocska/ts-codec.svg)](https://www.npmjs.com/package/@adam-rocska/ts-codec)
-[![License](https://img.shields.io/npm/l/@adam-rocska/ts-codec)](https://github.com/adam-rocska/ts-codec/blob/master/LICENSE)
+[![License](https://img.shields.io/npm/l/@adam-rocska/ts-codec)](https://github.com/adam-rocska/ts-codec-typescript/blob/master/LICENSE)
+
+| Aspect               | Badge                                                                                                                                                 |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Minified             | [![Minified](https://badgen.net/bundlephobia/min/@adam-rocska/ts-codec)](https://bundlephobia.com/package/@adam-rocska/ts-codec)                      |
+| Minified + gzip      | [![Minified + gzip](https://badgen.net/bundlephobia/minzip/@adam-rocska/ts-codec)](https://bundlephobia.com/package/@adam-rocska/ts-codec)            |
+| Dependency Count     | [![Dependency Count](https://badgen.net/bundlephobia/dependency-count/@adam-rocska/ts-codec)](https://bundlephobia.com/package/@adam-rocska/ts-codec) |
+| Tree-shaking Support | [![Tree-shaking Support](https://badgen.net/bundlephobia/tree-shaking/@adam-rocska/ts-codec)](https://bundlephobia.com/package/@adam-rocska/ts-codec) |
 
 A TypeScript library that provides a strongly-typed and
 user-friendly API for encoding and decoding data types.
