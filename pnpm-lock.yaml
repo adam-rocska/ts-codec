@@ -31,7 +31,7 @@ importers:
         version: 29.7.0(@types/node@22.5.4)
       pnpm:
         specifier: ^9.9.0
-        version: 9.12.3
+        version: 9.15.4
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -2196,8 +2196,8 @@ packages:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
 
-  pnpm@9.12.3:
-    resolution: {integrity: sha512-zOD53pxafJW++UQWnMXf6HQav7FFB4wNUIuGgFaEiofIHmJiRstglny9f9KabAYu9z/4QNlrPIbECsks9KgT7g==}
+  pnpm@9.15.4:
+    resolution: {integrity: sha512-stwg4vxys+GISEWbNzWaMgZGY+VielHkx0ssKd2OjgSRSDw6u0B4nP1Xi/Ni+2uoJhsF8Dh9dnku1uI+o7G2oA==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -5329,7 +5329,7 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  pnpm@9.12.3: {}
+  pnpm@9.15.4: {}
 
   possible-typed-array-names@1.0.0: {}
 
